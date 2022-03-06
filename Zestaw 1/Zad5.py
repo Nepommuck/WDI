@@ -9,7 +9,7 @@
 
 
 if __name__ == '__main__':
-    kw = int(input("x^2 = "))
+    kw = float(input("x^2 = "))
 
     # Dokladnosc uzyskanego wyniku - im wyższa, tym więcej iteracji
     eps = 0.000_000_1
