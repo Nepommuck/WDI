@@ -1,4 +1,5 @@
 # Zadanie 1.
+# 
 # Proszę napisać program wypisujący elementy ciągu Fibonacciego mniejsze od miliona.
 
 
