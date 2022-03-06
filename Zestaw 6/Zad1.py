@@ -95,9 +95,8 @@ def rekur2(licz, usun, tab):
         while k > 0:
             licz = 10*licz + (k % 10)
             k //= 10
-        if licz >= 10 and is_prime(licz):
-            if licz not in tab:
-                tab.append(licz)    # Jedyna różnica
+        if licz >= 10 and is_prime(licz) and licz not in tab:
+            tab.append(licz)    # Jedyna różnica
     n = dlug(licz)
     if licz >= 100:
         for i in range(n):
