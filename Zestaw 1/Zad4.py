@@ -7,7 +7,7 @@
 
 
 if __name__ == '__main__':
-    kw = int(input("Podaj sumę do sprawdzenia: "))    
+    kw = int(input("n^2 = "))    
     sum = 0
     n = 0
     el = 1
@@ -18,4 +18,4 @@ if __name__ == '__main__':
         el += 2
         
     n -= 1
-    print(n)
+    print(f'n = {n}')
