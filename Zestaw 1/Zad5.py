@@ -12,11 +12,12 @@ if __name__ == '__main__':
     kw = float(input("x^2 = "))
 
     # Dokladnosc uzyskanego wyniku - im wyższa, tym więcej iteracji
-    eps = 0.000_000_1
+    eps = 0.000_1
     a = 1
     b = kw
     while abs(a - b) > eps:
-        a = (a+b) / 2
+        a = (a + b) / 2
         b = kw / a
-        
-    print(f'x = {a}')
+    
+    # średnia obu boków stanowi najlepsze przybliżenie pierwiastka pola
+    print(f'x = {(a+b)/2}')
