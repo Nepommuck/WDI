@@ -31,7 +31,7 @@ def dlug(n):
 
 
 # Rozwiązanie 1:
-# nierekurencyjne, przy użyciu stringów, sporadycznie wypisuje parokrotnie tę samą liczbę
+# nierekurencyjne, przy użyciu stringów, czasem wypisuje parokrotnie tę samą liczbę
 def iter(licz):
     nap = str(licz)
     n = len(nap)
@@ -51,7 +51,7 @@ def iter(licz):
 
 
 # Rozwiązanie 2:
-# REKURENCYJNE, bez stringów, wypisuje od groma tych samych liczb
+# REKURENCYJNE, bez stringów, czasem wypisuje parokrotnie tę samą liczbę
 def rekur(licz, usun=-1):
     if usun != -1:
         k = 0
@@ -68,7 +68,7 @@ def rekur(licz, usun=-1):
             print(licz)
     n = dlug(licz)
     if licz >= 100:
-        for i in range(n):
+        for i in range(max(0, usun), n):
             rekur(licz, i)
 
 
@@ -99,7 +99,7 @@ def rekur2(licz, usun, tab):
             tab.append(licz)    # Jedyna różnica
     n = dlug(licz)
     if licz >= 100:
-        for i in range(n):
+        for i in range(max(0, usun), n):
             rekur2(licz, i, tab)
 
 
